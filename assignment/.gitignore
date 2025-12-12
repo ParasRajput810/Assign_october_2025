@@ -3,3 +3,4 @@ solver_output.tar.gz
 *.tar.gz
 solver_data.csv
 solver_output.txt
+horner
