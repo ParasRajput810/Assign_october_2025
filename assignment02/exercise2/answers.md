@@ -1,0 +1,3 @@
+### Exercise 2(a)
+
+I implemented the function f(x) = exp(x)(sin³x + cos³x) and used both the central difference and complex step methods to estimate its derivative at x = π/4 for h = 10⁻ᵏ. The results in numerical_diff.txt show that when h is large the error is big for both methods, but it becomes smaller as h decreases. When h becomes very small, the central difference loses accuracy because of subtraction and rounding errors, while the complex step stays stable and gives almost constant values close to the true derivative. This shows that the complex step method is more reliable for very small step sizes.
