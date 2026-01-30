@@ -1,0 +1,35 @@
+DOXYFILE_ENCODING      = UTF-8
+
+PROJECT_NAME           = "Scientific Computing I - Assignment 3"
+PROJECT_NUMBER         = "Winter 2025/2026"
+OUTPUT_DIRECTORY       = doxygen
+
+# Scan both exercise folders (as required by the pattern)
+INPUT                  = excersice1 exercsice2
+RECURSIVE              = YES
+FILE_PATTERNS          = *.c *.h *.md
+
+# Exclude build artifacts (so you don't accidentally document binaries/objects)
+EXCLUDE_PATTERNS       = */*.o */exercise1 */exercise2 */main
+
+# C settings
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+
+# Warnings (good for grading)
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+# Output
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+
+# Source browsing (optional but useful)
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+
+# Quiet
+QUIET                  = NO
